@@ -1,0 +1,176 @@
+:root {
+    --color-primario: #242038;
+    --color-secundario-1: #725AC1;
+    --color-secundario-2: #8D86C9;
+    --color-secundario-3: #CAC4CE;
+    --color-secundario-4: #F7ECE1;
+}
+/*Reset*/
+
+html{
+    top:0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg,black,#242038,#725AC1);
+    color: #CAC4CE;
+}
+/*link general*/
+a{
+    text-decoration: none;
+    color:#CAC4CE
+}
+
+li a:hover{
+    background-color: #8D86C9;
+    padding: inherit;
+    border-radius: 50%;
+    border: 1px solid #F7ECE1;
+}
+
+/*cabecero*/
+header{
+    display: flex;
+    width: 100%;
+    background: linear-gradient(120deg,black,#242038,black);
+    /*background: linear-gradient(80deg,rgb(14, 1, 37),#242038);*/
+    position: fixed;
+    top: 0px;
+    justify-content: space-around;
+    z-index: 3;
+}
+
+h1{
+    letter-spacing: 10px;
+    max-width: 50%;
+    text-align: center;
+}
+
+nav{
+    position: relative;
+    display: block;
+}
+
+/*navegacion*/
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    padding: 15px;
+    justify-content: center;
+}
+
+/*inicio*/
+#inicio{
+    margin: 20px 0px 80px;
+    padding: 150px 150px 150px 100px;
+    position: relative;
+}
+
+#inicio h2{
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 2;
+}
+
+.maquina{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+#inicio p{
+    text-align: center;
+    font-size: 14.5px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    border-right: 4px solid #CAC4CE;
+    white-space: nowrap;
+    width: 81ch;
+    z-index: 2;
+
+    animation: typing 3s steps(60), blink .5s infinite step-end;
+    overflow: hidden;
+}
+@keyframes typing {
+    from{
+        width: 0%;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: black;
+}
+
+/*background: linear-gradient(120deg,black,#242038,#725AC1);*/
+
+/*servicios*/
+
+#servicios{
+    display: flex;
+}
+
+#servicios div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 2);
+    height: 280px;
+    text-align: center;
+    padding: 0px;
+    margin: 15px 35px;
+    border: 3px solid black;
+    background: linear-gradient(120deg,#8D86C9,#CAC4CE,#F7ECE1);
+    color: #242038;
+}
+
+#titulo-servicio{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div h3{
+    background: linear-gradient(80deg, black, rgb(24, 2, 59));
+    margin: 0px;
+    padding: 10px;
+    color: #CAC4CE;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1.5px;
+}
+
+div p{
+    margin: 10px 40px;
+    padding: 20px;
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 16px;
+}
