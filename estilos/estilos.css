@@ -112,12 +112,17 @@ li a:hover{
     .checkbtn{
         display: block;
     }
+
+    #inicio div p{
+        font-size: 12.5px;
+    }
+
     ul{
         position: relative;
         width: 100%;
         height: 100vh;
         background: linear-gradient(120deg,black,#242038,#725AC1);
-        top: 97px;
+        top: 0px;
         left: -100%;
         text-align: center;
         transition: .5s;
@@ -137,12 +142,6 @@ li a:hover{
     }
     #check:checked ~ ul{
         left: 0;
-    }
-}
-
-@media (max-width: 450px){
-    #inicio{
-        width: 100%;
     }
 }
 
@@ -170,15 +169,15 @@ li a:hover{
 }
 
 #inicio p{
+    padding: 0;
     text-align: center;
     font-size: 14.5px;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
-    border-right: 4px solid #CAC4CE;
+    border-right: 2px solid #CAC4CE;
     white-space: nowrap;
-    width: 81ch;
+    width: 82ch;
     z-index: 2;
-
     animation: typing 3s steps(60), blink .5s infinite step-end;
     overflow: hidden;
 }
@@ -226,7 +225,7 @@ video{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: calc(100% / 2);
+    width: calc(100vh / 2);
     height: 280px;
     text-align: center;
     padding: 0px;
@@ -257,4 +256,93 @@ div p{
     font-family: monospace;
     font-size: 16px;
     line-height: 16px;
+}
+
+@media (max-width: 690px){
+    .checkbtn{
+        display: block;
+    }
+
+    nav{
+        width: 100vw;
+    }
+    
+    #inicio h2{
+        font-size: 45px;
+    }
+
+    #inicio div p{
+        font-size: 7px;
+    }
+
+    ul{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(120deg,black,#242038,#725AC1);
+        top: 0;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+        z-index: 3;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover{
+        background: none;
+        color: black;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #inicio{
+        width: 100%;
+    }
+
+    #titulo-servicio{
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    div h3{
+        background: linear-gradient(80deg, black, rgb(24, 2, 59));
+        margin: 0px;
+        padding: 5px;
+        color: #CAC4CE;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: 1.2px;
+        font-size: 14px;
+    }
+    
+    div p{
+        margin: 5px 5px;
+        padding: 15px;
+        font-family: monospace;
+        font-size: 8px;
+        line-height: 16px;
+    }
+
+    #servicios div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: calc(100vh / 2);
+        height: 350px;
+        text-align: center;
+        padding: 0px;
+        margin: 15px 35px;
+        border: 3px solid black;
+        background: linear-gradient(120deg,#8D86C9,#CAC4CE,#F7ECE1);
+        color: #242038;
+    }
+
 }
