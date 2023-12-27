@@ -24,19 +24,6 @@ a{
     color:#CAC4CE
 }
 
-/*cabecero*/
-
-/*header{
-    display: flex;
-    width: 100%;
-    background: linear-gradient(120deg,black,#242038,black);
-    /*background: linear-gradient(80deg,rgb(14, 1, 37),#242038);
-    position: fixed;
-    top: 0px;
-    justify-content: space-around;
-    z-index: 3;
-}*/
-
 nav{
     background: linear-gradient(120deg,black,#242038,black);
     position: fixed;
@@ -95,54 +82,6 @@ li a:hover{
 
 #check{
     display: none;
-}
-
-/*Responsive*/
-
-@media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-
-    #inicio div p{
-        font-size: 12.5px;
-    }
-
-    ul{
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        background: linear-gradient(120deg,black,#242038,#725AC1);
-        top: 0px;
-        left: -100%;
-        text-align: center;
-        transition: .5s;
-        z-index: 3;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0px;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    li a:hover{
-        background: none;
-        color: black;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
 }
 
 /*inicio*/
@@ -207,12 +146,10 @@ video{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100.5%;
     opacity: 0.8;
     background-color: black;
 }
-
-/*background: linear-gradient(120deg,black,#242038,#725AC1);*/
 
 /*servicios*/
 
@@ -220,16 +157,14 @@ video{
     display: flex;
 }
 
-#servicios div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#servicios > div{
+    display: block;
     text-align: center;
-    width: calc(100vh / 2);
-    height: 280px;
+    width: calc(100% / 2);
+    height: calc(100% / 27);
     text-align: center;
     padding: 0px;
-    margin: 15px 35px;
+    margin: 30px calc(100% / 27);
     border: 3px solid black;
     background: linear-gradient(120deg,#8D86C9,#CAC4CE,#F7ECE1);
     color: #242038;
@@ -239,26 +174,67 @@ video{
     font-size: 50px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    text-transform: uppercase;
 }
 
 div h3{
     background: linear-gradient(80deg, black, rgb(24, 2, 59));
     margin: 0px;
     padding: 10px;
+    width: 100%;
     color: #CAC4CE;
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 1.5px;
 }
 
-div p{
-    margin: 10px 40px;
-    padding: 20px;
+.description{
+    margin: 10px 20px;
+    padding: 10px;
     font-family: monospace;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 36px;
+    text-align: justify;
 }
 
-@media (max-width: 690px){
+.boton-servicio{
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    color: #F7ECE1;
+    background-color: black;
+    margin: 0;
+}
+
+#contacto{
+    border: 2px solid black;
+    margin: 5px 150px;
+    background: linear-gradient(120deg,#0000008e,#242038);
+}
+
+#contacto h2{
+    background-color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+/*Responsive*/
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 890px){
     .checkbtn{
         display: block;
     }
@@ -323,23 +299,21 @@ div p{
     }
     
     div p{
-        margin: 5px 5px;
-        padding: 15px;
+        margin: 0px;
+        padding: 10px;
         font-family: monospace;
         font-size: 8px;
         line-height: 16px;
     }
 
-    #servicios div{
+    #servicios > div{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         width: calc(100vh / 2);
-        height: 350px;
         text-align: center;
         padding: 0px;
-        margin: 15px 35px;
         border: 3px solid black;
         background: linear-gradient(120deg,#8D86C9,#CAC4CE,#F7ECE1);
         color: #242038;
