@@ -153,18 +153,19 @@ video{
 
 /*servicios*/
 
-#servicios{
+.cajas-servicios{
     display: flex;
+    margin-top: 80px;
 }
 
-#servicios > div{
+#servicios > div > div{
     display: block;
     text-align: center;
     width: calc(100% / 2);
     height: calc(100% / 27);
     text-align: center;
     padding: 0px;
-    margin: 30px calc(100% / 27);
+    margin: 30px;
     border: 3px solid black;
     background: linear-gradient(120deg,#8D86C9,#CAC4CE,#F7ECE1);
     color: #242038;
@@ -212,8 +213,9 @@ div h3{
 
 #contacto{
     border: 2px solid black;
-    margin: 5px 150px;
+    margin: calc(100% / 10);
     background: linear-gradient(120deg,#0000008e,#242038);
+    display: block;
 }
 
 #contacto h2{
@@ -221,6 +223,23 @@ div h3{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
+}
+
+.campos{
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+form button{
+    width: 100%;
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 /*Responsive*/
@@ -306,7 +325,7 @@ div h3{
         line-height: 16px;
     }
 
-    #servicios > div{
+    #servicios > div > div{
         display: flex;
         flex-direction: column;
         align-items: center;
