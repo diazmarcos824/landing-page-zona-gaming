@@ -1,12 +1,4 @@
-:root {
-    --color-primario: #242038;
-    --color-secundario-1: #725AC1;
-    --color-secundario-2: #8D86C9;
-    --color-secundario-3: #CAC4CE;
-    --color-secundario-4: #F7ECE1;
-}
-/*Reset*/
-
+/*RESET*/
 *{
     padding: 0;
     margin: 0;
@@ -14,16 +6,15 @@
     list-style: none;
     box-sizing: border-box;
 }
-
 body{
     background: linear-gradient(120deg,black,#242038,#725AC1) no-repeat;
     color: #CAC4CE;
 }
-/*link general*/
+/*G LINK*/
 a{
     color:#CAC4CE
 }
-
+/*NAV*/
 nav{
     background: linear-gradient(120deg,black,#242038,black);
     position: fixed;
@@ -31,32 +22,21 @@ nav{
     width: 100%;
     z-index: 3;
 }
-
-h1{
-    position: absolute;
-    display: block;
-}
-
 .enlace{
     position: absolute;
     padding: 22.5px 50px;
     font-size: 45px;
 }
-
-/*navegacion*/
-
 nav ul{
     float: right;
     padding: 25.5px;
 
 }
-
 nav ul li{
     display: inline-block;
     line-height: 45px;
     margin: 0px 5px;
 }
-
 nav ul li a{
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
@@ -64,12 +44,10 @@ nav ul li a{
     border-radius: 3px;
     text-transform: uppercase;
 }
-
 li a:hover{
     background: black;
     transition: .5s;
 }
-
 .checkbtn{
     font-size: 30px;
     color: #F7ECE1;
@@ -79,12 +57,11 @@ li a:hover{
     cursor: pointer;
     display: none;
 }
-
 #check{
     display: none;
 }
 
-/*inicio*/
+/*INI*/
 #inicio{
     padding-top: 247px;
     position: relative;
@@ -92,7 +69,6 @@ li a:hover{
     background-position: center center;
     height: calc(115vh - 97px);
 }
-
 #inicio h2{
     position: relative;
     font-size: 50px;
@@ -100,13 +76,11 @@ li a:hover{
     font-family: 'Courier New', Courier, monospace;
     z-index: 2;
 }
-
 .maquina{
     display: flex;
     justify-content: space-around;
     padding-top: 40px;
 }
-
 #inicio p{
     padding: 0;
     text-align: center;
@@ -120,18 +94,18 @@ li a:hover{
     animation: typing 3s steps(60), blink .5s infinite step-end;
     overflow: hidden;
 }
+/*ANIMATION*/
 @keyframes typing {
     from{
         width: 0%;
     }
 }
-
 @keyframes blink {
     50%{
         border-color: transparent;
     }
 }
-
+/*VIDEO*/
 video{
     position: absolute;
     top: 0;
@@ -140,7 +114,6 @@ video{
     height: 100%;
     object-fit: cover;
 }
-
 .capa{
     position: absolute;
     top: 0;
@@ -150,14 +123,11 @@ video{
     opacity: 0.8;
     background-color: black;
 }
-
-/*servicios*/
-
+/*SERVI*/
 .cajas-servicios{
     display: flex;
     margin-top: 80px;
 }
-
 #servicios > div > div{
     display: block;
     text-align: center;
@@ -170,7 +140,6 @@ video{
     background: linear-gradient(120deg,#8D86C9,#CAC4CE,#F7ECE1);
     color: #242038;
 }
-
 #titulo-servicio{
     font-size: 50px;
     text-align: center;
@@ -178,7 +147,6 @@ video{
     background-color: black;
     text-transform: uppercase;
 }
-
 div h3{
     background: linear-gradient(80deg, black, rgb(24, 2, 59));
     margin: 0px;
@@ -188,7 +156,6 @@ div h3{
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 1.5px;
 }
-
 .description{
     margin: 10px 20px;
     padding: 10px;
@@ -197,7 +164,6 @@ div h3{
     line-height: 36px;
     text-align: justify;
 }
-
 .boton-servicio{
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
@@ -210,21 +176,19 @@ div h3{
     background-color: black;
     margin: 0;
 }
-
+/*CONTACT*/
 #contacto{
     border: 2px solid black;
     margin: calc(100% / 10);
     background: linear-gradient(120deg,#0000008e,#242038);
     display: block;
 }
-
 #contacto h2{
     background-color: black;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
 }
-
 .campos{
     display: block;
     width: 100%;
@@ -232,7 +196,6 @@ div h3{
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
 }
-
 form button{
     width: 100%;
     margin: 15px 0;
@@ -241,9 +204,7 @@ form button{
     font-size: 16px;
     cursor: pointer;
 }
-
-/*Responsive*/
-
+/*RESPONSIVE*/
 @media (max-width: 952px){
     .enlace{
         padding-left: 20px;
@@ -252,24 +213,19 @@ form button{
         font-size: 15px;
     }
 }
-
 @media (max-width: 890px){
     .checkbtn{
         display: block;
     }
-
     nav{
         width: 100vw;
-    }
-    
+    }  
     #inicio h2{
         font-size: 45px;
     }
-
     #inicio div p{
         font-size: 7px;
     }
-
     ul{
         position: relative;
         width: 100%;
@@ -296,17 +252,14 @@ form button{
     #check:checked ~ ul{
         left: 0;
     }
-
     #inicio{
         width: 100%;
     }
-
     #titulo-servicio{
         font-size: 40px;
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
     }
-    
     div h3{
         background: linear-gradient(80deg, black, rgb(24, 2, 59));
         margin: 0px;
@@ -316,7 +269,6 @@ form button{
         letter-spacing: 1.2px;
         font-size: 14px;
     }
-    
     div p{
         margin: 0px;
         padding: 10px;
@@ -324,7 +276,6 @@ form button{
         font-size: 8px;
         line-height: 16px;
     }
-
     #servicios > div > div{
         display: flex;
         flex-direction: column;
@@ -337,5 +288,4 @@ form button{
         background: linear-gradient(120deg,#8D86C9,#CAC4CE,#F7ECE1);
         color: #242038;
     }
-
 }

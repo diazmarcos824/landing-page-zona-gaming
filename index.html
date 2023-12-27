@@ -8,13 +8,14 @@
     <title>Zona Gaming</title>
 </head>
 <body>
+  <header>
+      <!--NAV-->
         <nav>
           <input type="checkbox" id="check">
           <label class="checkbtn" for="check"><i class="fa-solid fa-bars"></i></label>
           <a href="#" class="enlace">
             <i class="fa-solid fa-gamepad" class="logo"></i>
           </a>
-          <!--<h1>Zona Gaming</h1>-->
           <ul>
             <li><a class="active" href="#inicio">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
@@ -23,14 +24,15 @@
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
-    
+  </header>
+    <!--SECTION INI-->
       <section id="inicio">
         <video src="video/Y2meta.app - This Is What 1000 Hrs of MGSV Looks Like.mp4" muted autoplay loop></video>
         <h2>Bienvenido a la zona gamer preferida de latinoámerica</h2>
         <div class="maquina"><p>Un lugar dónde podrás ser quién tu quieras ser, el único límite es tu imaginación</p></div>
         <div class="capa"></div>
       </section>
-    
+    <!--SECTION SERV-->
       <section id="servicios">
         <h2 id="titulo-servicio">Gaming Products</h2>
         <div class="cajas-servicios">
@@ -46,20 +48,20 @@
         </div>
       </div>
       </section>
-    
+    <!--SECTION CONTACT-->
       <section id="contacto">
         <h2>Contacto</h2>
-        <form action="submit" method="get">
+        <form method="GET">
           <label class="campos" for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre">
+          <input type="text" id="nombre" name="nombre" required>
           <label class="campos" for="email">Email:</label>
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" required>
           <label class="campos" for="mensaje">Mensaje:</label>
           <textarea class="campos" id="mensaje" name="mensaje"></textarea>
           <button type="submit">Enviar</button>
         </form>
       </section>
-    
+    <!--FOOTER-->
       <footer>
         <p>Derechos reservados &copy; 2023</p>
       </footer>
